@@ -1,0 +1,473 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: white;
+    font-family: 'Consolas', 'Arial', 'Helvetica', 'sans-serif';
+    margin: 0;
+}
+
+button {
+    box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 2.8em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h5 {
+    font-size: 1.35em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.3em;
+}
+
+button {
+    font-size: 24px;
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    background-color: #E95146;
+    color: white;
+    cursor: pointer;
+    position: relative;
+}
+
+button:hover {
+    background-color: #a53f39;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+.color-acento {
+    color: #E95146;
+}
+
+header {
+    background-color: #E95146;
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+}
+
+header .logo {
+    display: none;
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-size: large;
+    font-weight: bolder;
+    gap: 10px;
+}
+
+#hero h1 {
+    font-size: 5em;
+}
+
+header a {
+    padding: 0;
+    text-decoration: none;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(255, 255, 255);
+}
+
+header #logo-header:hover {
+    filter: brightness(0%);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.8)), url("/Img/Casas-Modernas-14.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#hero button {
+    font-size: 1.8em;
+}
+
+#somos-domica .container {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+#nuestros-productos {
+    background-color: rgba(30, 30, 30);
+    color: white;
+    text-align: center;
+    height: 100%;
+}
+
+#nuestros-productos .container {
+    padding: 40px 12px;
+}
+
+#nuestros-productos h2 {
+    margin-top: 0px;
+}
+
+#nuestros-productos p {
+    display: none;
+    justify-content: center
+}
+
+#nuestros-productos .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+
+}
+
+.carta:first-child {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.8)),
+        url("/Img/Iluminacion.jpg");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.8)),
+        url("/Img/sensores.jpg");
+
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(0deg,
+            rgba(0, 0, 0, 0.2),
+            rgba(0, 0, 0, 0.8)),
+        url("/Img/asistentes.jpg");
+
+}
+
+#caracteristicas{
+    display: flex;
+    height: 100%;
+}
+
+#caracteristicas .container {
+    text-align: center;
+
+}
+
+#caracteristicas .texto{
+    margin: 80px 0px;
+}
+
+#caracteristicas-text ul{
+    margin: 100px 0px;
+    padding: 0px;
+}
+
+#caracteristicas li {
+    margin: 20px 0px;
+    font-weight: bold;
+}
+
+#contactanos {
+    display: flex;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 70vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#contactanos h3 {
+    font-size: 70px;
+    padding: 10px;
+    margin: 10px;
+}
+
+#contactanos button {
+    font-size: 20px;
+    justify-content: space-around;
+    margin: 10px;
+}
+
+
+#contactanos h5 {
+    margin-top: 40px;
+    padding-top: 20px;
+    margin-bottom: 10px;
+}
+
+#contactanos p {
+    margin: 20px;
+    float: left;
+}
+
+#contactanos a {
+    text-decoration: none;
+    margin: 0px;
+    color: blue;
+}
+
+.icono-w {
+    background-image: url(/Img/icono-whatsapp.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.icono-f {
+    background-image: url(/Img/icono-facebook.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.icono-i {
+    background-image: url(/Img/icono-instagram.png);
+    background-size: contain;
+    width: 50px;
+    height: 50px;
+}
+
+.icono-g {
+    background-image: url(/Img/icono-gmail.png);
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+button.icono-f:hover,
+button.icono-g:hover,
+button.icono-i:hover,
+button.icono-w:hover {
+    filter: brightness(60%);
+}
+
+#contactanos p:hover {
+    margin: 20px;
+}
+
+
+footer {
+    background-color: #E95146;
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+}
+
+footer .container {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+@media (min-width: 981px) {
+
+    header {
+        position: fixed;
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    header .logo{
+        display: flex;
+        font-size: 3.5em;
+        font-weight: bolder;
+        color: white;
+    }
+
+    header .menu {
+        position: relative;
+        justify-content: space-around;
+        flex-direction: row;
+        margin-left: 60px;
+        width: 45%;
+        align-items: center;
+        font-size: 1.32em;
+    }
+
+    #hero{
+        height: 100vh;
+    }
+
+    #somos-domica{
+        height: 70vh;
+    }
+
+    #somos-domica .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 3%;
+    }
+
+    #somos-domica .img-container {
+        background-image: url("/Img/quienes-somos.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+        box-shadow: 14px 12px 10px;
+    }
+
+    #somos-domica .texto {
+        width: 40%;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    #somos-domica h2 {
+        margin-top: 0;
+    }
+    
+
+
+    #nuestros-productos h2{
+        font-size: 4em;
+        margin-bottom: 20px;
+    }
+
+    #nuestros-productos .productos {
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p {
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h3 {
+        margin: 12px;
+        font-size: 2.5em;
+    }
+
+    #nuestros-productos .carta {
+        padding: 10px;
+        box-shadow: 0px 0px 10px 7px rgba(0, 0, 0, 0.5);
+        max-width: 30%;
+        height: 100%;
+    }
+
+
+    #caracteristicas{
+        display: flex;      
+        height: 500px;
+    }
+
+    #caracteristicas .container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-evenly;
+    }
+
+    #caracteristicas .img-container{
+        background-image: url("/Img/servicio-cliente.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+        box-shadow: 14px 12px 10px;
+    }
+    
+    #caracteristicas-text{
+        display: flex;
+        margin: 0px;
+    }
+
+    #caracteristicas .container ul {
+        position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #contactanos {
+        margin-top: 0px;
+    }
+
+    #contactanos a {
+        display: flex;
+        text-align: left
+    }
+
+    footer .container {
+        justify-content: flex-end;
+    }
+}
+
+/* ///////////////////////////////////////////////////////////////// */
+
+@media (min-width: 1024) {
+    #caracteristicas {
+        background-position-x: calc(100vw - 500xp);
+    }
+}
