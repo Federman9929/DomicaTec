@@ -21,6 +21,8 @@
       {
         "image-alt": "off"
       }
-    ]
+    ],
+    "button-type": "off",
+    "meta-viewport": "off"
   }
 }

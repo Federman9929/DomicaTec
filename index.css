@@ -297,6 +297,7 @@ button.icono-g:hover,
 button.icono-i:hover,
 button.icono-w:hover {
     filter: brightness(60%);
+    transform: scale(1.2);
 }
 
 #contactanos p:hover {
