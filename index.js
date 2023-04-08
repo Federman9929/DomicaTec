@@ -1,3 +1,5 @@
 alert("Bienvenido a mi pagina Web");
 
-alert("Te amo mi amor.");
+alert("Hola mundo, estoy haciendo pruebas con Git");
+
+alert("Algún dia seré un gran desarrollador")
